@@ -1,0 +1,35 @@
+Blueshift Baseline Estimator
+----------------------------
+by Jim Browne
+
+1. How to run the program:
+
+-User must be working in a 64 bit windows operating system
+Desktop: Double click the BlushiftBaselineEstimator.exe file.
+Console: Navigate to the directory of BlueshiftBaselineEstimator.exe, enter 'start BlueshifBaselineEstimator.exe' into the console and enter.
+
+2. Assumptions 
+
+- In order to fit sample data where .499999(recurring) was not being treated as .5 (and thus being rounded to 1), it was assumed that rounding only considers up to the third significant figure. 
+- It is assumed that the volume of data input would not exceed the memory capacity of the system, it would require added complexity to implement paging to cater for this possibility.
+- It is assumed that the user is running on a 64 bit windows operating system. Design in .Net 6 should make shipping to other operating systems easy.
+- It was decided to spend extra time validating inputs.
+
+3. Possible Improvements
+
+- More unit tests based on real-world data and edge cases could be added
+- Console libraries could be used to improve the visual appeal
+- Imports and exports could include multiple lines to be run in parallel
+- The application could read/write to a database
+- The application could implement user access control
+
+4. Time management
+
+0.5h - Understanding requirements and considering appropriate framework
+0.5h - Setting up project and creating unit tests
+1.5h - TDD to create the calculation algorithms
+0.5h - Applying solid principles to code
+1.5h - Creating user interface
+1.0h - Adding interface validation 
+0.5h - Adding code comments
+1.0h - Publishing and notes
